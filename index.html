@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1aee831684.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header class="navbar_cus">
+        <a href="/">
+            <span>Expense Tracker</h1>
+        </a>
+        <div class="main_balance">
+            <h2>Your Balance</h2>
+            <span id="balance">
+                <!-- Here is the Balance -->
+            </span>
+        </div>
+    </header>
+
+    <main class="main_section">
+
+        <div class="left_side main_container">
+            <div class="incomeExpence">
+                <div class="show_table">
+                    <div class="income_div">
+                        <h4>INCOME</h4>
+                        <div id="income">
+                            <!-- Here is the Income -->
+                        </div>
+                    </div>
+
+                    <div class="expence_div">
+                        <h4>EXPENSE</h4>
+                        <div id="expense">
+                            <!-- Here is the Enpense -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trans_hist">
+                    <h4>HISTORY</h4>
+                    <ul id="trans_list">
+                        <!-- Here is all transaction -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right_side main_container">
+
+            <form onsubmit="return false;">
+                <h4>ADD A TRANSACTION</h4>
+                <div class="input_div">
+                    <label for="text_label">Add a label</label><br />
+                    <input type="text" name="text_label" id="text_label" placeholder="Add a label">
+                </div>
+                <div class="input_div">
+                    <label for="input_trans">Add Transaction</label><br />
+                    <input type="number" name="input_trans" id="input_trans" placeholder="Enter Value ">
+                </div>
+                <div class="btn_div">
+                    <button id="addIn_trans" class="green_btn">Add Income</button>
+                    <button id="addEx_trans" class="red_btn">Add Expense</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

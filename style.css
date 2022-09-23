@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --red: #EB1D36;
+    --green : #1FAB89;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #16213E;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    overflow: hidden;
+    background-color: #eee;
+}
+/* header section css */
+
+.navbar_cus {
+    padding: 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    z-index: 33;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.main_balance h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.navbar_cus a span {
+    font-size: 28px;
+    color: #010101;
+}
+
+/* main section css */
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+}
+
+.main_container{
+    padding: 170px 0;
+}
+
+.show_table{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+.show_table .income_div,
+.show_table .expence_div{
+    padding: 20px 40px;
+    border: 1px solid rgb(71, 71, 71);
+    font-size: 18px;
+}
+
+.income_div #income{
+    color: var(--green);
+}
+.expence_div #expense{
+    color: var(--red);
+}
+
+.trans_hist{
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+}
+
+.trans_hist h4,
+.right_side form h4{
+    border-bottom: 1px solid grey;
+    padding: 10px 15px;
+}
+
+.trans_hist #trans_list{
+    list-style: none;
+    height: 45vh;
+    max-width: 500px;
+    overflow-y: auto;
+}
+#trans_list::-webkit-scrollbar{
+    width: 1px;
+
+}
+#trans_list::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+}
+
+#trans_list .list_item{
+    padding: 8px 5px 8px 15px;
+    background-color: #eee;
+    margin: 5px ;
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid gray;
+
+}
+
+.plus{
+    border-right: 8px solid var(--green);
+    color: var(--green);
+}
+.minus{
+    border-right: 8px solid var(--red);
+    color: var(--red);
+}
+
+.list_item button{
+    padding: 4px 10px;
+    margin-left: 8px;
+    cursor: pointer;
+    background-color: var(--red);
+    border: none;
+    outline: none;
+}
+.list_item button i{
+    color: #fff;
+}
+
+
+/* right side design  */
+.right_side form{
+    border: 1px solid grey;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+}
+
+.right_side form div{
+    padding: 5px 10px;
+}
+
+.input_div input{
+    width: 100%;
+    height: 40px;
+    padding: 0 8px;
+    border: none;
+    outline: none; 
+    border-bottom: 1px solid grey;   
+}
+
+.btn_div button{
+    width: 280px;
+    height: 35px;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+button.green_btn{
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+button.green_btn:hover{
+    background-color: var(--green);
+    color: #010101;
+}
+
+button.red_btn{
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+button.red_btn:hover{
+    background-color: var(--red);
+    color: #010101;
+}
